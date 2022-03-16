@@ -87,20 +87,16 @@ function NFTBalance() {
                       <FileSearchOutlined
                         onClick={() =>
                           window.open(
-                            `${getExplorer(chainId)}address/${
-                              nft.token_address
+                            `${getExplorer(chainId)}address/${nft.token_address
                             }`,
                             "_blank",
                           )
                         }
                       />
                     </Tooltip>,
-                    <Tooltip title="Transfer NFT">
-                      <SendOutlined onClick={() => handleTransferClick(nft)} />
-                    </Tooltip>,
-                    <Tooltip title="Sell On OpenSea">
+                    <Tooltip title="List this NFT">
                       <ShoppingCartOutlined
-                        onClick={() => alert("OPENSEA INTEGRATION COMING!")}
+                        onClick={() => alert("Add Marketplace smartcontract integration")}
                       />
                     </Tooltip>,
                   ]}
